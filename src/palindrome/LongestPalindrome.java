@@ -185,7 +185,6 @@ public class LongestPalindrome {
 
         for (int i = 2; i <= len; i++){
             for (int j = 0; j < len - i + 1; j++){
-                //当前判断回文长度为i，起始位置为j
                 int currLast = j + i - 1;
                 if (str.charAt(j) == str.charAt(currLast)){
                     p[j][currLast] = p[j+1][currLast-1];
